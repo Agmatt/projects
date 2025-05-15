@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -23,23 +23,30 @@ p {
 }
 
 /* Navbar */
-.navbar{
+.navbar {
     position: sticky;
     top: 0;
+    background: #ffffff;
+    opacity: 1;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav a{
-    color: #095c6e;
+.navbar-nav a {
+    color: #a80e3c;
+}
+.navbar-nav a:hover {
+    color: #0e8ba7;
 }
 
 .navbar-nav a {
     position: relative;
 }
 
- .navbar-nav a:hover::before {
+.navbar-nav a:hover::before {
     content: '';
     position: absolute;
-    background-color: #185a69;
+    background-color: #a80e3c;
     height: 4px;
     width: 100%;
     left: 0;
@@ -53,27 +60,30 @@ p {
         width: 100px;
     }
 }
+
 /* INTRO */
-.intro-text{
+.intro-text {
     background: #444d56;
     opacity: .8;
 }
 
 /* BUTTON GROUP */
-.button-group{
+.button-group {
     background: #0e8ba7;
     outline: none;
 }
-.button-group a{
+
+.button-group a {
     color: white;
 }
-.button-group:hover{
+
+.button-group:hover {
     background: #0e8ba7;
 }
 
 /* INTRODUCTION */
-.introduction h4{
-    color: #185a69;
+.introduction h4 {
+    color: #a80e3c;
 }
 
 
@@ -134,21 +144,24 @@ p {
 } */
 
 /* CTA */
-.call-to-action .container{
+.call-to-action .container {
     background: linear-gradient(180deg #a7ae51, #11a76d);
 }
 
 
 /* Stories */
-.story{
+.story {
     height: 100%;
 }
-.stories h3{
-    color: #185a69;
-}
+
 .stories h3 {
-    color: #185a69;
+    color: #a80e3c;
 }
+
+.stories h3 {
+    color: #a80e3c;
+}
+
 .stories-header {
     position: relative;
 }
@@ -156,7 +169,7 @@ p {
 .stories-header::before {
     content: '';
     position: absolute;
-    background-color: #185a69;
+    background-color: #a80e3c;
     height: 4px;
     width: 8%;
     /* left: 25%; */
@@ -170,47 +183,65 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-.card-text a{
+
+.card-text a {
     text-decoration: none;
     color: #095c6e;
 }
 
-.card-text a:hover{
+.card-text a:hover {
     text-decoration: none;
     color: #444d56;
 }
 
-.card-image img{
+.card-image img {
     width: 100%;
-   aspect-ratio: 7/5;
+    aspect-ratio: 7/5;
 }
 
 /* Footer */
-footer{
-    background: #074351;
+footer {
+    background: #a80e3c;
     color: #fff;
 }
-footer .container img{
+
+footer .container img {
     width: 20%;
     border-radius: 5%;
 }
-footer a:hover{
-    color: #d9da85;
-}
-.social a .bi{
-    color: #fff;
-}
-.social a .bi:hover{
+
+footer a:hover {
     color: #d9da85;
 }
 
-/* Gallery */
-.gallery-section h2{
-    color: #185a69;
+.social a .bi {
+    color: #fff;
 }
-.gallery-section img {
+
+.social a .bi:hover {
+    color: #d9da85;
+}
+
+/* Gallery */.gallery-section h2 {
+    color: #a80e3c;
+}
+
+.gallery-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* prevent wrapping to keep it as a horizontal carousel */
+    gap: 1rem;
+    /* THIS adds spacing between images */
+}
+
+.gallery-img {
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
+    max-width: 100%;
+    padding: 0.5rem;
+    /* optional — use gap OR padding */
 }
 
 .carousel-control-prev,
@@ -224,13 +255,7 @@ footer a:hover{
 }
 
 /* ABOUT */
-header{
-    background: #ebe8e837;
-    width: 14rem;
-}
-header span{
-    color: #185a69;
-}
+
 
 /* header a{
     position: relative;
@@ -262,16 +287,17 @@ header a:hover::before{
     bottom: 0;
     margin: auto;
 }
+
 /* Hist */
-.hist{
+.hist {
     position: relative;
-    color: #185a69;
+    color: #a80e3c;
 }
 
 .hist::before {
     content: '';
     position: absolute;
-    background-color: #185a69;
+    background-color: #a80e3c;
     height: 4px;
     width: 8%;
     left: 0;
@@ -279,105 +305,9 @@ header a:hover::before{
     margin: auto;
 }
 
-.stats{
+.stats {
     color: #185a69;
 }
 
-.history-break .container{
-    background: linear-gradient(160deg, rgb(192, 191, 191),#25e6af25);
-}
 
-/* Values */
-.values h4{
-    color: #185a69;
-}
-
-/* Staff */
-.team h4{
-    color: #185a69;
-}
-.team .story img{
-    aspect-ratio: 3/3;
-}
-
-/* Programs */
-.programs h4{
-    color: #185a69;
-}
-/* Stories */
-.impact h4{
-    color: #185a69;
-}
-
-.intro-section{
-    background: linear-gradient(160deg, rgb(192, 191, 191), #25e6af25);
-}
-.intro-section h4{
-color: #185a69;
-}
-
-aside a{
-    color: #185a69;
-}
-aside a{
-    color: #185a69;
-}
-
-/* Resources */
-.reports h4{
-    color: #185a69;
-}
-
-/* CONTACT */
-.contact-header h5{
-    color: #185a69;
-}
-
-.contact-details .contact_list_1 h4{
-    color: #185a69;
-}
-
-.contact_list_1 .card{
-    background: #e0e4a9bb;
-}
-.contact_list_2 .card{
-    background: #185a69e6;;
-}
-
-/* FAQ */
-.accordion-button::after {
-    display: none;
-}
-
-.accordion-button.custom-accordion-btn {
-    background-color: transparent;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 3rem;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.accordion-button.custom-accordion-btn:hover {
-    color: #185a69;
-}
-
-.accordion-button:focus {
-    box-shadow: none;
-}
-
-.toggle-icon {
-    position: absolute;
-    right: 1.5rem;
-    font-size: 1.5rem;
-    color: #185a69;
-    transition: transform 0.3s ease;
-}
-
-.accordion-button[aria-expanded="true"] {
-    color: #185a69;
-}
+/* partner */
